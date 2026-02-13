@@ -22,6 +22,11 @@ package com.project.runner;
             runCucumberFeature("src/test/resources/com/automation-testing-1/features/LoginScreenForRecruiters_pos.feature");
         }
     
+    @Test(priority = 2)
+        public void runSheet1() {
+            runCucumberFeature("src/test/resources/com/automation-testing-1/features/Sheet1.feature");
+        }
+    
             
     private void runCucumberFeature(String featurePath) {
             String featureName = new File(featurePath).getName().replace(".feature", "");
